@@ -21,7 +21,8 @@ setup(
         # We need either PIL, or the newer Pillow. Since this may induce some
         # dependency madness, I have created a module that should flatten that
         # out. See: https://github.com/mikeboers/Flask-Images/pull/10 for more.
-        'PillowCase',
+        # PillowCase broke deployment on GAE.
+        'Pillow',
         
         'six',
 
